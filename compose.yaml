@@ -3,15 +3,17 @@ services:
     image: postgres:18
     container_name: postgres-dev
     environment:
-      - POSTGRES_PASSWORD=
-      - POSTGRES_DB=
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:?define POSTGRES_PASSWORD en .env}
+      - POSTGRES_DB=${POSTGRES_DB:-event_monitor}
+    ports:
+      - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql
   cache:
     image: redis:latest
     ports:
       - "6379:6379"
-    command: redis-server --save 20 1 --loglevel warning --requirepass
+    command: redis-server --save 20 1 --loglevel warning --requirepass ${REDIS_PASSWORD:?define REDIS_PASSWORD en .env}
     volumes:
       - cache:/data
 volumes:
