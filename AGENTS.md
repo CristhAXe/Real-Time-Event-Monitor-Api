@@ -28,7 +28,7 @@ API para registrar y consultar eventos (tipo, mensaje, severidad) en tiempo real
 
 ## Pull requests
 - Rama desde `main` actualizado con prefijo de tipo: `feat/`, `fix/`, `chore/`, `docs/`, `refactor/` + descripción corta (`feat/websocket-eventos`).
-- Título en Conventional Commits; descripción con la plantilla `.github/pull_request_template.md` (qué, por qué, cómo probarlo, riesgos).
+- Título en Conventional Commits; descripción con la plantilla `.github/pull_request_template.md` (Context, Solution, Impact, Validation, Rollout and rollback, Checklist).
 - PR pequeño: un objetivo y < ~400 líneas. Si crece, divídelo en PRs encadenados.
 - Abre como draft si no está listo; pide revisión solo con el checklist completo.
 - Al menos una aprobación antes del merge; nunca push directo a `main`.

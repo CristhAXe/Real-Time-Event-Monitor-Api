@@ -1,20 +1,22 @@
-## Qué
-<!-- Resumen del cambio en 1-3 puntos. -->
+## Context
+<!-- Problem or need behind this change. Link the issue: Closes #123 -->
 
-## Por qué
-<!-- Problema o necesidad. Enlaza el issue: Closes #123 -->
+## Solution
+<!-- What changed and the approach taken. -->
 
-## Cómo probarlo
-<!-- Pasos exactos para verificarlo en local. -->
-1.
+## Impact
+<!-- Breaking changes, migrations, env vars, performance. "None" if not applicable. -->
 
-## Riesgos y rollback
-<!-- Qué puede romperse (datos, migraciones, config, .env) y cómo revertir. "Ninguno" si aplica. -->
+## Validation
+<!-- Exact steps, commands and results that prove it works. -->
+
+## Rollout and rollback
+<!-- How to deploy it and how to revert it if something fails. -->
 
 ## Checklist
-- [ ] Un solo objetivo y menos de ~400 líneas cambiadas
-- [ ] Título en Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`…)
-- [ ] Tests añadidos o actualizados (o explicado por qué no)
-- [ ] Sin secretos ni archivos locales (`.env`, `.venv/`, `__pycache__/`)
-- [ ] `AGENTS.md`, `README.md` o `docs/` actualizados si cambian stack, comandos, variables o arquitectura
-- [ ] Entrada en `docs/decisiones.md` si hay una decisión relevante
+- [ ] Single goal and under ~400 changed lines
+- [ ] Title follows Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`…)
+- [ ] Tests added or updated (or explained why not)
+- [ ] No secrets or local files (`.env`, `.venv/`, `__pycache__/`)
+- [ ] `AGENTS.md`, `README.md` or `docs/` updated if stack, commands, env vars or architecture change
+- [ ] Entry in `docs/decisiones.md` if there is a relevant decision
